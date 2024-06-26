@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3001;
 
 let redisConnect = require("redis");
-
+console.log("redis",redisConnect)
 const redisClient = redisConnect.createClient({
   url: "redis://127.0.0.1:6379",
 });
